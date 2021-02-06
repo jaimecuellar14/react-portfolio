@@ -1,0 +1,90 @@
+.home-container{
+    background-color: black;
+    display: flex;
+    overflow-x: hidden;
+}
+.home-info{
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+}
+.label{
+    color: whitesmoke;
+    font-size: 4rem;
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+
+}
+.item a h1.new-label span{
+    content:"Hi";
+}
+.item:hover a h1.new-label span{
+    display: none;
+}
+.item:hover a h1.new-label:after{
+    color: red;
+    content:"About"
+}
+.item a h2.new-label span{
+    content:"Jaime"
+}
+.item:hover a h2.new-label span{
+    display: none;
+}
+.item:hover a h2.new-label:after{
+    color:red;
+    content:"Contact";
+}
+.item a h3.new-label span{
+    content:"Cuellar"
+}
+.item:hover a h3.new-label span{
+    display: none;
+}
+.item:hover a h3.new-label:after{
+    color:red;
+    content:"Work";
+}
+.home-picture{
+    height: 100vh;
+    background-image: url("../Assets/jaime2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+@media only screen and (max-width:900px){
+    .home-container{
+        flex-direction: column;
+    }
+    .home-picture{
+        background-size: contain;
+    }
+}
