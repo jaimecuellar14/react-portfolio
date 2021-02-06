@@ -1,0 +1,21 @@
+.about-page{
+    background-color: black;
+    display: flex;
+    height: 100%;
+    align-content: center;
+    flex-direction: column;
+}
+
+.about-header-info{
+    display: flex;
+    margin-top:5rem;
+    flex-direction: column;
+}
+.about-header-info h1{
+    color: whitesmoke;
+    font-size: 5rem;
+}
+.about-info p{
+    color:white;
+    margin-top: 4rem;
+}
