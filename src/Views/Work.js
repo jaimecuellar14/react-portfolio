@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import Repo from '../Components/work/repo';
 import WorkLoadingSpinner from '../Components/work/work-loading-spinner';
-
+import "../styles/work.css";
 const Work = () => {
 
     const [ repos , setRepos] = useState();
@@ -17,8 +18,8 @@ const Work = () => {
         })
             .then(response => response.json())
             .then(data=>{
+                setRepos(data);
                 setLoadingRepos(false)
-                setRepos();
                 console.log(data);
             })
             .catch(error=>console.log(error));
@@ -28,12 +29,21 @@ const Work = () => {
     },[]);
 
     if (loadingRepos){
-        return(<WorkLoadingSpinner/>);
+        return(<div className="loading-spinner">
+            <WorkLoadingSpinner/>
+            </div>);
+    }
+    if(repos){
+        return(
+            <div className="work-container">
+                <div className="repos-container">
+                    <Repo repos={repos}/>
+                </div>
+            </div>
+        )
     }
     return(
-        <div>
-            Work component
-        </div>
+        <div></div>
     )
 }
 

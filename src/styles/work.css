@@ -1,0 +1,23 @@
+.loading-spinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.work-container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    align-content: flex-start;
+}
+
+.repos-container{
+    width: 100%;
+    margin: 5rem;
+    overflow-y: scroll;
+    height: 25rem;
+    overflow-x: hidden;
+}
