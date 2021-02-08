@@ -23,8 +23,14 @@ const Repo = (props) =>{
                                     </Typography>
                                 </CardContent>
                                 <CardActions>
-                                    <FontAwesomeIcon icon={faGithub} />
-                                    <Button size="small" onClick={()=>viewRepo(repo.html_url)}>View repo</Button>
+                                    <Button
+                                        variant="contained"
+                                        color="primary"
+                                        startIcon={<FontAwesomeIcon icon={faGithub}/>}
+                                        onClick={()=>viewRepo(repo.html_url)}
+                                     >
+                                         Go to repository
+                                    </Button>
                                 </CardActions>
                             </Card>
                         </Grid>

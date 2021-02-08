@@ -3,21 +3,20 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
 }
 
 .work-container{
     display: flex;
-    height: 100vh;
     width: 100%;
     overflow-x: hidden;
+    overflow-y: auto;
     align-content: flex-start;
     flex-direction: column;
 }
 
 .repos-container{
-    width: 100%;
     margin-left: 5rem;
-    margin-right:5rem;
     overflow-y: scroll;
     height: 25rem;
     overflow-x: hidden;
@@ -25,6 +24,7 @@
 .repos-container h1{
     color: white;
 }
+/*
 ::-webkit-scrollbar{
     width: 10px;
     background-color: #F5F5F5;
@@ -36,17 +36,50 @@
 ::-webkit-scrollbar-thumb{
     background-color: rgb(77, 92, 175); 
     background-image: -webkit-linear-gradient(90deg,rgba(255, 255, 255, .2) 25%,transparent 25%,transparent 50%,rgba(255, 255, 255, .2) 50%,rgba(255, 255, 255, .2) 75%,transparent 75%,transparent)
-}
+}*/
 
 .deployed-projects{
     margin-left: 5rem;
+    margin-bottom: 5rem;
 }
 .deployed-projects h1{
+    color:white;
+}
+.github-title{
+    margin-left: 5rem;
     color:white;
 }
 
 @media only screen and (max-width:900px){
     .repos-container{
-        margin-left: 0px;
+        margin-left: 3rem;
     }
+    .deployed-projects{
+        margin-left: 3rem;
+    }
+    .github-title{
+        margin-left: 3rem;
+    }
+    .work-summary{
+        margin-left: 3rem;
+        justify-content: flex-start;
+    }
+}
+
+p{
+    color:white
+}
+
+.work-summary{
+    margin-top: 5rem;
+    margin-left: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.work-summary-info{
+    width: 50%;
+}
+.work-summary-info p{
+    color:white;
+    text-align: justify;
 }

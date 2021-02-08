@@ -3,6 +3,7 @@ import Repo from '../Components/work/repo';
 import DeployedProjects from '../Components/work/deployed-projects';
 import WorkLoadingSpinner from '../Components/work/work-loading-spinner';
 import "../styles/work.css";
+import WorkSummary from '../Components/work/work-summary';
 const Work = () => {
 
     const [ repos , setRepos] = useState();
@@ -37,12 +38,15 @@ const Work = () => {
     if(repos){
         return(
             <div className="work-container">
+                <div className="work-summary">
+                    <WorkSummary/>
+                </div>
                 <div className="deployed-projects">
-                    <h1>Deployed project</h1>
+                    <h1>Deployed projects</h1>
                     <DeployedProjects/>
                 </div>
+                <h1 className="github-title">Github repositories</h1>
                 <div className="repos-container">
-                    <h1>Github repositories</h1>
                     <Repo repos={repos}/>
                 </div>
             </div>
