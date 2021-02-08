@@ -3,7 +3,7 @@ import { Card, Grid, CardContent,Typography, CardActions, Button } from "@materi
 const Repo = (props) =>{
     console.log(props.repos)
     const viewRepo = (url) =>{
-        console.log(url)
+        window.open(url);
     }
     return(
         <div>
@@ -21,7 +21,7 @@ const Repo = (props) =>{
                                     </Typography>
                                 </CardContent>
                                 <CardActions>
-                                    <Button size="small" onClick={viewRepo()}>View repo</Button>
+                                    <Button size="small" onClick={()=>viewRepo(repo.html_url)}>View repo</Button>
                                 </CardActions>
                             </Card>
                         </Grid>
