@@ -1,0 +1,39 @@
+.about-page{
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.about-header-info{
+    display: flex;
+    margin-top:5rem;
+    flex-direction: column;
+    align-content: center;
+}
+.about-header-info h1{
+    color: whitesmoke;
+    font-size: 3rem;
+}
+.about-info p{
+    color:white;
+    margin-top: 1rem;
+}
+.about-introduction{
+    text-align: justify;
+}
+.downloadCV-button{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.downloadCV-button Button{
+    float: left;
+    margin-left: 25%;
+}
+.downloadCV-button a{
+    text-decoration: none;
+    color: white;
+}
