@@ -13,6 +13,7 @@ const Navbar = (props) =>{
         i18n.changeLanguage(language);
 
         console.log(i18n.language);
+        localStorage.setItem("language",i18n.language);
     }
     const history = useHistory();
 

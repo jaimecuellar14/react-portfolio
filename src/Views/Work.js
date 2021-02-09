@@ -12,6 +12,8 @@ const Work = () => {
     const [ loadingRepos, setLoadingRepos ] = useState(false);
 
     const getRepositories = () =>{
+        i18n.changeLanguage(localStorage.getItem("language"));
+
         setLoadingRepos(true);
         console.log(process.env.REACT_APP_GITHUB_TOKEN);
         fetch("https://api.github.com/users/jaimecuellar14/repos?per_page=50",{

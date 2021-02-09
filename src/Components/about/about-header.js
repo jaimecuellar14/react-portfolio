@@ -2,6 +2,7 @@ import jaime_jedi from "../../Assets/jaime1.jpg"
 import { useTranslation } from "react-i18next";
 const AboutHeader = () =>{
     const { t, i18n } = useTranslation();
+
     return(
         <div>
             <div className="about-header-info">

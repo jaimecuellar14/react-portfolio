@@ -3,6 +3,7 @@ import "../styles/contact.css";
 import { useTranslation } from "react-i18next";
 const Contact = () =>{
     const { t, i18n } = useTranslation();
+    i18n.changeLanguage(localStorage.getItem("language"));
     return(
         <div className="contact-container">
             <Navbar home={true}/>
