@@ -1,12 +1,16 @@
+import Navbar from "../Components/Navbar";
 import "../styles/contact.css";
 const Contact = () =>{
     return(
         <div className="contact-container">
+            <Navbar home={true}/>
             <div className="contact-info">
                 <p>Feel free to check out my profiles and get in touch with me.
                     You can find me here:
 
-                    <ul class="contact-platforms">
+                    
+                </p>
+                <ul class="contact-platforms">
                         <li>
                             jamescuellar14@gmail.com
                         </li>
@@ -20,7 +24,6 @@ const Contact = () =>{
                             <a href="https://www.kaggle.com/jaimec14">Kaggle</a>
                         </li>
                     </ul>
-                </p>
             </div>
         </div>
     )

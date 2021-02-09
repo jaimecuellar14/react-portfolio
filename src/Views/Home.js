@@ -1,9 +1,13 @@
 import jaime from "../Assets/jaime2.jpg";
 import "../styles/home.css"
+import Navbar from "../Components/Navbar";
 const { Container } = require("@material-ui/core")
 const Home = () =>{
     return(
-        <div className="home-container">
+        <div>
+            
+            <Navbar home={false}/>
+            <div className="home-container">
             <Container maxWidth="sm" className="home-info">
                 <div className="item">
                     <a href="/about">
@@ -36,6 +40,8 @@ const Home = () =>{
             <Container maxWidth="sm" className="home-picture">
             </Container>
         </div>
+        </div>
+
     )
 }
 

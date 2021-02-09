@@ -4,6 +4,7 @@ import DeployedProjects from '../Components/work/deployed-projects';
 import WorkLoadingSpinner from '../Components/work/work-loading-spinner';
 import "../styles/work.css";
 import WorkSummary from '../Components/work/work-summary';
+import Navbar from '../Components/Navbar';
 const Work = () => {
 
     const [ repos , setRepos] = useState();
@@ -38,6 +39,7 @@ const Work = () => {
     if(repos){
         return(
             <div className="work-container">
+                <Navbar home={true}/>
                 <div className="work-summary">
                     <WorkSummary/>
                 </div>

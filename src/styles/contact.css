@@ -1,13 +1,14 @@
 .contact-container{
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    width: 100%;
 }
-
-.contact-container .contact-info{
+.contact-info{
     height: 30rem;
-    width: 40rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .contact-platforms{
