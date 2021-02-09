@@ -3,14 +3,14 @@
     "nombre":"Jaime",
     "apellido":"Cuellar",
     "carrera":"Ingeniero informático",
-    "personal-info":"Soy Jaime, un joven muy trabajador. Me considero como una persona que da su 100% a todo a lo que me apasiona. Afortunadamente encontré el mundo de la tecnología y me enamore de ella. Mi recorrido comienza hace 4 años cuando decidí estudiar ingeniería informática y volé desde El Salvador a España con el objetivo de obtener una buena educación y un mejor futuro. Despues de mi primer año de universidad, decidí aplicar por una beca. Obtuve el 50% y unos pocos meses despues fui contratado para realizar practicas en Netkia, esto cubrió el 50% restante. Estaba muy feliz y orgulloso de mi mismo por haber sido seleccionado para unirme a Netkia. Con habilidades básicas, forme parte del equipo de desarrollo de aplicaciones móviles, donde crecí en el ámbito de desarrollo web, principalmente por que las aplicaciones desarrolladas en Netkia fueron utilizando AngularJS y PHP como backend. Pero puedes ver mi CV y obtener mas información acerca de mi.",
+    "personal-info":"Soy Jaime, un joven salvadoreño, emprendedor con un gran tesón y un fuerte espíritu de aprendizaje. Me considero una persona entregada a mi trabajo. Decubrí el mundo de la tecnología e inmediatamente me atrajo su infinidad de posibilidades. Mi recorrido comienza en el dos mil dieciseis(2016), tras decidir mudarme a España con el objetivo de obtener una buena educación y un mejor futuro en la rama de la ingeniaría informática.  Desempeñé practicas en la compañía Netkia durante los tres útimos años de carrera con la finalidad de poder costearme los estudios. Esta experinecia me enriqueció tanto a nivel personal como profesional, llegando a desarrollar habilidades tales como, el trabajo en equipo, el desarrollo de aplicaciones móviles, donde crecí en el ámbito de desarrollo web, principalmente por que las aplicaciones desarrolladas en Netkia fueron utilizando AngularJS y PHP como backend. Os invito a echarle un vistazo a mi CV para obtener mas información acerca de mi.",
     "ver-cv":"Ver CV",
-    "contact":"Tomate la libertad de ver mis perfiles y ponerte en contacto con migo. Me puedes encontrar aquí:",
+    "contact": "Os invito a echarle un vistazo a mi perfil y no dudeis en poneros en contacto conmigo para cualquier duda o propuesta.",
     "github-repos":"Repositorios de Github",
     "deployed-projects":"Proyectos desplegados",
     "go-to-repo":"Ir al repositorio",
     "go-to-project":"Ir al proyecto",
     "symfony-react":"Symfony + App React (En desarrollo)",
     "getting-repos":"Obteniendo los repositorios de Github",
-    "work-info":"En mis 3 años de experiencia trabajando en Netkia fui parte de diferentes proyectos de desarrollo de aplicaciones móviles. Durante este periodo trabaje con:"
+    "work-info":"En mis tres años de experiencia trabajando con la compañía Netkia, fui parte de diferentes proyectos de desarrollo de aplicaciones móviles. Durante este periodo trabaje con:"
 }
