@@ -1,8 +1,11 @@
 import jaime from "../Assets/jaime2.jpg";
 import "../styles/home.css"
 import Navbar from "../Components/Navbar";
+import React from 'react';
+import { useTranslation } from "react-i18next";
 const { Container } = require("@material-ui/core")
 const Home = () =>{
+    const {t, i18n } = useTranslation();
     return(
         <div>
             
@@ -13,7 +16,7 @@ const Home = () =>{
                     <a href="/about">
                         <h1 className="label hi new-label">
                             <span>
-                                Hi, I am
+                                {t('hola')}
                             </span>
                         </h1>
                     </a>
@@ -22,7 +25,7 @@ const Home = () =>{
                     <a href="/contact">
                         <h2 className="label jaime new-label">
                             <span>
-                                Jaime
+                                {t("nombre")}
                             </span>
                         </h2>
                     </a>
@@ -31,7 +34,7 @@ const Home = () =>{
                     <a href="/work">
                         <h3 className="label cuellar new-label">
                             <span>
-                                Cuellar
+                                {t("apellido")}
                             </span>
                         </h3>
                     </a>

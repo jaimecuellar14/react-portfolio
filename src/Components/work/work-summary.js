@@ -1,11 +1,10 @@
+import { useTranslation } from "react-i18next";
 const WorkSummary = () => {
+    const { t, i18n } = useTranslation();
     return(
         <div className="work-summary-info">
             <p>
-                Within my 3 years of experience working in Netkia
-                I were part of different mobile app projects.
-                
-                During this period of time I worked with:
+                {t("work-info")}
                 <ul>
                     <li>AngularJS</li>
                     <li>PHP Slim</li>

@@ -2,11 +2,18 @@ import "../styles/navbar.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { useHistory } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 const { Button } = require("@material-ui/core")
 
 
 const Navbar = (props) =>{
+    const { t, i18n } = useTranslation();
+    const changeLanguage = (language) =>{
+        i18n.changeLanguage(language);
+
+        console.log(i18n.language);
+    }
     const history = useHistory();
 
     const goToHome = () => {
@@ -35,14 +42,14 @@ const Navbar = (props) =>{
                 <Button
                     variant="contained"
                     color="primary"
-                    onClick={goToHome}
+                    onClick={()=>{changeLanguage("EN")}}
                 >
                     EN
                 </Button>
                 <Button
                     variant="contained"
                     color="primary"
-                    onClick={goToHome}
+                    onClick={()=>{changeLanguage("ES")}}
                 >
                     ES
                 </Button>

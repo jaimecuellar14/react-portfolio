@@ -2,7 +2,9 @@ import { Card, Grid, CardContent,Typography, CardActions, Button, Icon } from "@
 import "../../styles/work.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { useTranslation } from "react-i18next";
 const Repo = (props) =>{
+    const { t, i18n } = useTranslation();
     console.log(props.repos)
     const viewRepo = (url) =>{
         window.open(url);
@@ -29,7 +31,7 @@ const Repo = (props) =>{
                                         startIcon={<FontAwesomeIcon icon={faGithub}/>}
                                         onClick={()=>viewRepo(repo.html_url)}
                                      >
-                                         Go to repository
+                                         {t("go-to-repo")}
                                     </Button>
                                 </CardActions>
                             </Card>

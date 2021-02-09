@@ -5,7 +5,7 @@ import Home from './Views/Home';
 import About from './Views/About';
 import Contact from './Views/Contact';
 import Work from './Views/Work';
-
+import './i18n';
 
 function App() {
   return (
