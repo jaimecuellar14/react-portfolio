@@ -3,9 +3,10 @@ import "../../styles/work.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
-
+import { useTranslation } from "react-i18next";
 const DeployedProjects = () =>{
 
+    const { t, i18n } = useTranslation();
     const goToPreguntameloRepo = () =>{
         window.open("https://github.com/jaimecuellar14/preguntamelo");
         window.open("https://github.com/jaimecuellar14/preguntameloAPI");
@@ -38,14 +39,14 @@ const DeployedProjects = () =>{
                                 startIcon={<FontAwesomeIcon icon={faGithub}/>}
                                 onClick={goToSensoRepo}
                             >
-                                Go to repository
+                                {t("go-to-repo")}
                             </Button>
                             <Button
                                 variant="contained"
                                 startIcon={<FontAwesomeIcon icon={faLocationArrow}/>}
                                 onClick={goToSenso}
                             >
-                                Go to project
+                                {t("go-to-project")}
                             </Button>
                         </CardActions>
                     </Card>
@@ -54,7 +55,7 @@ const DeployedProjects = () =>{
                 <Card>
                         <CardContent>
                             <Typography color="textPrimary" gutterBottom>
-                                Symfony + React App (Under development)
+                                {t("symfony-react")}
                             </Typography>
                         </CardContent>
                         <CardActions>
@@ -64,14 +65,14 @@ const DeployedProjects = () =>{
                                 startIcon={<FontAwesomeIcon icon={faGithub}/>}
                                 onClick={goToPreguntameloRepo}
                             >
-                                Go to repository
+                                {t("go-to-repo")}
                             </Button>
                             <Button
                                 variant="contained"
                                 startIcon={<FontAwesomeIcon icon={faLocationArrow}/>}
                                 onClick={goToPreguntamelo}
                             >
-                                Go to project
+                                {t("go-to-project")}
                             </Button>
                         </CardActions>
                     </Card>

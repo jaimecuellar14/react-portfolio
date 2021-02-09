@@ -5,12 +5,15 @@ import WorkLoadingSpinner from '../Components/work/work-loading-spinner';
 import "../styles/work.css";
 import WorkSummary from '../Components/work/work-summary';
 import Navbar from '../Components/Navbar';
+import { useTranslation } from "react-i18next";
 const Work = () => {
-
+    const { t, i18n } = useTranslation();
     const [ repos , setRepos] = useState();
     const [ loadingRepos, setLoadingRepos ] = useState(false);
 
     const getRepositories = () =>{
+        i18n.changeLanguage(localStorage.getItem("language"));
+
         setLoadingRepos(true);
         console.log(process.env.REACT_APP_GITHUB_TOKEN);
         fetch("https://api.github.com/users/jaimecuellar14/repos?per_page=50",{
@@ -44,10 +47,10 @@ const Work = () => {
                     <WorkSummary/>
                 </div>
                 <div className="deployed-projects">
-                    <h1>Deployed projects</h1>
+                    <h1>{t("deployed-projects")}</h1>
                     <DeployedProjects/>
                 </div>
-                <h1 className="github-title">Github repositories</h1>
+                <h1 className="github-title">{t("github-repos")}</h1>
                 <div className="repos-container">
                     <Repo repos={repos}/>
                 </div>

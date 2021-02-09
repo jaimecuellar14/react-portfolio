@@ -1,14 +1,14 @@
 import Navbar from "../Components/Navbar";
 import "../styles/contact.css";
+import { useTranslation } from "react-i18next";
 const Contact = () =>{
+    const { t, i18n } = useTranslation();
+    i18n.changeLanguage(localStorage.getItem("language"));
     return(
         <div className="contact-container">
             <Navbar home={true}/>
             <div className="contact-info">
-                <p>Feel free to check out my profiles and get in touch with me.
-                    You can find me here:
-
-                    
+                <p>{t("contact")}
                 </p>
                 <ul class="contact-platforms">
                         <li>
