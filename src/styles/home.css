@@ -28,6 +28,16 @@ a{
     color: red;
     content:"About"
 }
+.item a h1.new-label-es span{
+    content:"Hi";
+}
+.item:hover a h1.new-label-es span{
+    display: none;
+}
+.item:hover a h1.new-label-es:after{
+    color: red;
+    content:"Acerca de mi"
+}
 .item a h2.new-label span{
     content:"Jaime"
 }
@@ -38,6 +48,13 @@ a{
     color:red;
     content:"Contact";
 }
+.item:hover a h2.new-label-es span{
+    display: none;
+}
+.item:hover a h2.new-label-es:after{
+    color:red;
+    content:"Contacto";
+}
 .item a h3.new-label span{
     content:"Cuellar"
 }
@@ -47,6 +64,13 @@ a{
 .item:hover a h3.new-label:after{
     color:red;
     content:"Work";
+}
+.item:hover a h3.new-label-es span{
+    display: none;
+}
+.item:hover a h3.new-label-es:after{
+    color:red;
+    content:"Mi trabajo";
 }
 .home-picture{
     height: 100vh;

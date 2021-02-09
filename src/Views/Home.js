@@ -1,44 +1,28 @@
 import jaime from "../Assets/jaime2.jpg";
 import "../styles/home.css"
 import Navbar from "../Components/Navbar";
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from "react-i18next";
+import HomeGreetingEN from "../Components/home/Home-GreetingEN";
+import HomeGreetingES from "../Components/home/Home-GreetingES";
 const { Container } = require("@material-ui/core")
 const Home = () =>{
     const {t, i18n } = useTranslation();
+    const [ language , setLanguage ] = useState(i18n.language);
+    console.log(language);
+
+    const handleChange = (value) => {
+        setLanguage(value);
+    }
     return(
         <div>
             
-            <Navbar home={false}/>
+            <Navbar value={language} home={false} onChange={handleChange}/>
             <div className="home-container">
             <Container maxWidth="sm" className="home-info">
-                <div className="item">
-                    <a href="/about">
-                        <h1 className="label hi new-label">
-                            <span>
-                                {t('hola')}
-                            </span>
-                        </h1>
-                    </a>
-                </div>
-                <div className="item">
-                    <a href="/contact">
-                        <h2 className="label jaime new-label">
-                            <span>
-                                {t("nombre")}
-                            </span>
-                        </h2>
-                    </a>
-                </div>
-                <div className="item">
-                    <a href="/work">
-                        <h3 className="label cuellar new-label">
-                            <span>
-                                {t("apellido")}
-                            </span>
-                        </h3>
-                    </a>
-                </div>
+                {
+                    language === "EN" ? (<HomeGreetingEN/>) : (<HomeGreetingES/>)
+                }
             </Container>
             <Container maxWidth="sm" className="home-picture">
             </Container>
