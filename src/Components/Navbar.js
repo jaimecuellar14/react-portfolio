@@ -10,13 +10,18 @@ const { Button } = require("@material-ui/core")
 const Navbar = (props) =>{
     const { t, i18n } = useTranslation();
     const changeLanguage = (language) =>{
+        handleChange(language);
         i18n.changeLanguage(language);
 
         console.log(i18n.language);
         localStorage.setItem("language",i18n.language);
+        handleChange(i18n.language);
     }
     const history = useHistory();
 
+    const handleChange = (event) => {
+        props.onChange(event);
+    }
     const goToHome = () => {
         history.push("/");
     }
