@@ -1,0 +1,25 @@
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container .contact-info{
+    height: 30rem;
+    width: 40rem;
+}
+
+.contact-platforms{
+    list-style-type: none;
+}
+
+.contact-platforms li{
+    margin-top: 3rem;
+    color: red;
+}
+
+a{
+    text-decoration: none;
+    color:red !important;
+}
